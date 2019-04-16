@@ -1,0 +1,124 @@
+<html>
+<head>
+	<title>Maigc: The Gathering</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+body {
+background-size:cover;
+  background-image: url("./media/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+</style>
+</head>
+<body>
+	<div style="margin:0px; padding:0px;">
+		<a href="./php/cards.php">
+		<img src="./media/menu1.png" id="menu1" width="33%" style="float:left;">
+		</a>
+		<a href="">
+		<img src="./media/menu2.png" id="menu2" width="33%" style="float:left;">
+		</a>
+		<a href="./php/deckbuilder.php">
+		<img src="./media/menu3.png" id="menu3" width="33%">
+		</a>
+	</div>
+	<div style="background-color:rgba(255,255,255,0.7);">
+	<center>
+	<h1> Magic: The Gathering </h1>
+	<img src="./media/index/card.png" width="25%"></center>
+	<font face="Verdana" size="5">
+	<p>
+	
+	&emsp;Aparut in 1993, <b>Magic: The Gathering</b> este primul joc de carti colectionabile (collectible card game sau trading card game). Fiind ideea stralucita a matematicianului  <b>Richard Garfield</b>, cei de la <b>Wizards of the Coast</b> au inceput o afacere foarte profitabila, dovada fiind succesul instantaneu al jocului. La doar un an de la lansare in 1994, <b>Magic: The Gathering</b> a avut primul sau turneu mondial. De atunci inainte turneul este tinut anual pe baza de invitatie, iar premiul cel mare este de  45.000$.
+	<br>
+	&emsp;Momentan, <b>Magic: The Gathering</b> are aproximativ 12 milioane de jucatori. Eu joc doar pentru distractie. Nu voi incerca niciodata sa joc in competitii deoarece este prea costisitor. De ce? Pentru ca in majoritatea turneelor se folosesc anumite seturi de carti, iar Wizards of the Coast scot cam 3 seturi noi in fiecare an. Multe carti sunt re-tipariri din seturile anterioare, dar sunt si multe carti noi. Fiecare set vine cu un numar de carti cuprins intre 140 si 300 iar, aproape la fiecare set nou, este eliminat din turnee un set mai vechi. Dupa cum am mai spus, eu joc doar pentru distractie. Nu cunosc prea multe despre turnee sau campionate asa ca este posibil sa am cateva greseli in explicatii, dar sa vorbim inainte despre tematica …
+	<br>
+	&emsp;Jocul te pune in rolul unui planeswalker, un magician puternic ce isi foloseste puterile pentru a se lupta cu alti magicieni. Pentru aceasta exista doua tipuri principale de carti, <b>lands</b> (ce tin rolul resurselor) si <b>spells</b> (vraji). Acestea sunt si ele impartite in functie de raritate: comune, ne-comune, rare si mitice. Cu cat sunt mai greu de gasit cu atat sunt mai bune, dar si mai scumpe de cumparat.
+	<br>
+        &emsp;Dupa cum spuneam, land-urile sunt cartile ce genereaza resurse pentru a plati costul vrajilor, al abilitatilor si al efectelor de pe carti.
+
+	<center><img src="./media/index/lands.png" width="25%"></center>
+	&emsp;Este evident ce culoare de mana genereaza fiecare tip de <b>land</b>.
+	<br>
+In  categoria vrajilor intra toate cartile in afara de land-uri. Astfel si creaturile sunt tot vraji pana cand ajung pe campul de lupta. Majoritatea au un cost pentru a putea fi activate.
+<br>
+De exemplu:
+	<center><img src="./media/index/deathlessAngel.png" width="25%"></center>
+	&emsp;<b>Deathless Angel</b> este o creatura de tip Angel. Are abilitatea Flying si inca o abilitate ce necesita cheltuirea a doua puncte de mana alba pentru a fi activata. Are valoarea Atacului (Power) egala cu 5 iar cea a Vietii (Toughness) egala cu 7. Pentru a chema aceasta creatura, jucatorul trebuie sa-i plateasca intregul cost (din dreapta sus). In acesta caz, 4 mana de orice culoare + doua mana neaparat alba.
+	<br>
+Poate cu alta ocazie voi intra in detaliu despre toate tipurile de carti si abilitatile acestora. Sunt peste 200 de abilitati si daca nu ma insel, peste 20.000 de carti. Asta include toate cartile de la promo-uri pana la tokens.
+<br>
+Inainte de a trece la gameplay, vreau sa va minunati putin la artwork-ul cartilor ce, de la an la an, este tot mai impresionant.
+	<center><img src="./media/index/art01.png" width="25%">
+	<img src="./media/index/art02.png" width="25%"></center>
+	<center><img src="./media/index/art03.png" width="25%">
+	<img src="./media/index/art04.png" width="25%"></center>
+	<center><img src="./media/index/art05.png" width="25%">
+	<img src="./media/index/art06.png" width="25%"></center>
+	<center><img src="./media/index/art07.png" width="25%">
+	<img src="./media/index/art08.png" width="25%"></center>
+	<b>Gameplay</b>
+		<br>
+		&emsp;Fiecare jucator incepe cu 20 de puncte de viata. Se hotaraste cine incepe primul si se bat pachetele de carti (de minim 60 de carti). Jucatorii trag 7 carti din pachet si se uita la ele. Acum, fiecare are optiunea de a face <b>mulligan</b>. Asta inseamna ca isi bate din nou pachetul cu tot cu cele 7 carti din mana si trage alte 6 carti. Se poate face mulligan de mai multe ori, dar numai la inceputul jocului. Dupa ce toti jucatorii sunt multumiti de cartile trase, se poate incepe lupta.
+<br>
+&emsp;Turul unui jucator cuprinde 6 faze:
+<br>
+&emsp;<b>1. Upkeep</b> (in lb. romana s-ar traduce <b>"Detapare"</b>)
+<br>
+&emsp;In aceasta faza se intorc in pozitie verticala toate cartile tapate (<b>tapped</b> sau intoarse 90o) in tura anterioara. Aceasta actiune se numeste <b>untap</b> sau <b>detapare</b>. Tot in aceasta faza, creaturile chemate in turul trecut pierd restrictia de a ataca.
+<br>
+&emsp;<b>2. Tragerea unei carti</b>
+<br>
+&emsp;In aceasta faza jucatorul trage cartea de deasupra pachetului sau. La inceputul jocului, primul jucator nu are voie sa traga o carte. Astfel se balanseaza faptul ca el este primul.
+<br>
+&emsp;<b>3. Faza principala 1</b>
+<br>
+&emsp;a) Jucatorul are voie sa joace o singura resursa (<b>land</b>). Land-urile nu au cost si sunt asezate in zona lor proprie de sub campul de lupta.
+<br>
+&emsp;b) Jucatorul poate juca oricate vraji doreste, atat timp cat are resursele necesare.
+<br>
+&emsp;Pentru a juca o vraja, jucatorul trebuie sa intoarca 90o atatea land-uri cate sunt necesare pentru a acoperi costul vrajii. In exemplul de mai sus, pentru a chema <b>Deathless Angel</b>, jucatorul trebuie sa dea <b>tap</b> la 4 <b>land-uri</b> oarecare (nu conteaza tipul sau culoarea) + doua <b>land-uri</b> ce genereaza mana alba. Astfel are nevoie de 6 resurse nefolosite.
+<br>
+&emsp;Inainte de a ajunge pe camp, vrajile trec prin <b>Stack</b>, o <b>gramada</b> imaginara ce permite tuturor jucatorilor sa activeze abilitati speciale sau sa joace alte vraji.
+<br>
+&emsp;Un mic exemplu:
+<br>
+&emsp;Eu vreau sa joc vraja <b>X</b>. Ii platesc costul, o iau din mana si ma pregatesc sa o pun pe camp. In acest moment adversarul meu ma intrerupe si activeaza abilitatea unei creaturi, <b>Y</b>. Apoi se hotaraste sa joace si el o vraja, <b>Z</b>, platindu-i costul. Daca nimeni nu mai joaca sau nu mai activeaza nimic, se incepe rezolvarea <b>gramezii</b>, in ordine inversa. Intai vraja <b>Z</b> a adversarului, apoi abilitatea <b>Y</b> iar in final creatura mea, <b>X</b>.
+<br>
+&emsp;<b>4. Faza de atac</b>
+<br>
+&emsp;Toate creaturile chemate in acest tur (in <b>faza principala 1</b>) sufera de <b>summoning sickness</b>. Mai exact, nu pot ataca decat incepand cu urmatoarea faza de <b>upkeep</b> din turul tau. Daca ai creaturi ce pot ataca atunci:
+<br>
+&emsp;a) Declara atacatorii. Hotaraste cu ce creaturi vei ataca si da-le <b>tap</b>. In MtG creaturile ataca direct adversarii. Cand un jucator ramane cu 0 sau mai putin la viata, atunci pierde jocul.
+<br>
+&emsp;b) Adversarul hotaraste aparatorii. Asta inseamna ca se poate apara impotriva atacurilor. Pentru a se apara isi alege creaturile ce vor lupta impotriva creaturilor ce ataca. Pentru aparare se pot folosi doar creaturile ce nu au fost <b>tapate</b> (tapped), chiar si cele cu <b>summoning sickness</b>. Fiecare creatura poate bloca o singura creatura inamica, dar se pot folosi mai multe creaturi pentru a bloca una singura. Creaturile care nu au fost blocate vor ataca adversarul si ii vor scade din punctele de viata. Atacatorii care au fost blocati isi exercita atacul asupra aparatorilor, dar si invers. Aceste atacuri se intampla simultan.
+<br>
+&emsp;De exemplu: Eu folosesc creatura <b>X</b> (cu 5 la atac si 7 la viata) pentru a-mi ataca adversarul.El are doua creaturi: <b>A</b> (cu 4 la atac si 3 la viata) si <b>B</b> (3/2). Daca foloseste doar creatura <b>B</b>, atunci <b>X</b> isi va folosi intreg atacul pentru a o distruge. In acelasi timp <b>B</b> o va ataca pe <b>X</b>, dar nu are destul atac pentru a-i scade toate cele 7 puncte de viata. O alta optiune pentru aparator ar fi fost sa-si foloseasca ambele creaturi <b>A</b> si <b>B</b>, pentru a bloca pe <b>X</b>. In acest caz eu as fi avut optiunea de a-mi imparti atacul. Din cele 5 puncte de atac puteam folosi 3 pe creatura <b>A</b> si 2 pe creatura B. In acelasi timp, atacul creaturilor <b>A</b>+<b>B</b> ar fi fost destul sa-mi distruga creatura (4+3=7).
+<br>
+&emsp;Toate creaturile omorate sunt puse in cimitir.
+<br>
+&emsp;<b>5. Faza principala 2</b>
+<br>
+&emsp;Aceasta faza este la fel precum <b>faza principala 1</b>.
+<br>
+&emsp;<b>6. Sfarsitul turei</b>
+<br>
+&emsp;Acum se vindeca toate creaturile si vine tura altui jucator.
+<br>
+&emsp;In exemplul trecut, creatura <b>X</b> a fost blocata de catre creatura <b>B</b> si a ramas cu 4 la viata din maximul de 7. In aceasta faza creatura <b>X</b>  si-ar recapata punctele de viata pierdute. 
+<br>
+&emsp;Cam asa decurge un tur de <b>Magic: The Gathering</b>. Recunosc, mie imi place jocul. Un lucru care face din aceste carti un joc foarte indragit este faptul ca isi incalca singur regulile. Pentru fiecare regula a jocului exista cel putin o carte care o incalca.
+<br>
+&emsp;Cateva exemple:
+	<center><img src="./media/index/carti.png"></center>
+
+	Cea mai mare problema a sa este costul. Pachetele pentru incepatori sunt slabe iar majoritatea amuzamentului vine din crearea propriului tau pachet. Poti combina culorile in ce mod doresti, singura restrictie fiind ca nu poti avea in pachet mai mult de 4 copii ale unei carti. In schimb, poti avea cate <b>land-uri</b> doresti. Aici apare si o alta mica problema a jocului, cea a factorului de noroc. Degeaba poti juca un numar nelimitat de vraji daca nu ai resursele necesare. Daca joci doar pentru amuzament atunci <b>Magic: The Gathering</b> este un joc foarte bun, mai ales daca mai ai prieteni cu care poti face schimburi de carti. In orice caz, este un joc care merita incercat de oricine.
+<br>
+	</p>
+	</font>
+	<br>
+	</div>
+	<script src="./js/menu.js"></script>
+</body>
+</html>
