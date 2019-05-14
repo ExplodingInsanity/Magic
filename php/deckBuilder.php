@@ -4,6 +4,17 @@
 <title>Magic</title>
 </head>
 <body bgcolor="#ffe4a0">
+	<div style="margin:0px; padding:0px;">
+		<a href="./cards.php">
+		<img src="../media/menu1.png" id="menu1" width="33%" style="float:left;">
+		</a>
+		<a href="../index.html">
+		<img src="../media/menu2.png" id="menu2" width="33%" style="float:left;">
+		</a>
+		<a href="./deckbuilder.php">
+		<img src="../media/menu3.png" id="menu3" width="33%">
+		</a>
+	</div>
 <?php include('../dbconnection.php'); ?>
 
 
@@ -51,5 +62,6 @@ share:
 $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 echo $actual_link;
 ?></textarea>
+<script src="../js/menu1.js"></script>
 </body>
 </html>

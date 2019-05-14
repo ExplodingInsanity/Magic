@@ -4,6 +4,17 @@
 <title>Magic</title>
 </head>
 <body bgcolor="#7F879C">
+	<div style="margin:0px; padding:0px;">
+		<a href="./cards.php">
+		<img src="../media/menu1.png" id="menu1" width="33%" style="float:left;">
+		</a>
+		<a href="../index.html">
+		<img src="../media/menu2.png" id="menu2" width="33%" style="float:left;">
+		</a>
+		<a href="./deckbuilder.php">
+		<img src="../media/menu3.png" id="menu3" width="33%">
+		</a>
+	</div>
 <form action="cards.php" method="GET" id="mainForm">
 <?php 
 echo '<input type="hidden" name="offset" ';
@@ -66,5 +77,6 @@ if($card) echo '<img src="../media/'.$card['Nset'].'/'.$card['Nid'].'.full.jpg" 
 		$('#mainForm').submit();
 	};
 </script>
+<script src="../js/menu1.js"></script>
 </body>
 </html>

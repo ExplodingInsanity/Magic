@@ -1,4 +1,4 @@
-console.log("da");
+
 $('#menu1').hover(
 function(){
 this.setAttribute('src','./media/menu11.png');
